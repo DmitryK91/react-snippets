@@ -57,5 +57,14 @@ exports.default = [
             "export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:component});"
         ],
         "description": "A Redux connect function"
+    },
+    {
+        "prefix": "getDerivedStateFromProps",
+        "body": [
+            "static getDerivedStateFromProps(nextProps, prevState) {",
+            "\treturn null;",
+            "}"
+        ],
+        "description": "getDerivedStateFromProps static function"
     }
 ];
