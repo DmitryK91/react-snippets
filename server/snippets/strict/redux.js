@@ -27,9 +27,9 @@ exports.default = [
     {
         "prefix": "mapDispatchToProps",
         "body": [
-            "const mapDispatchToProps = (dispatch, ownProps) => ({",
-            "\t${1:dispatch1}: () => dispatch(${2:actionCreator})",
-            "});"
+            "const mapDispatchToProps = {",
+            "\t${1:dispatch1}",
+            "};"
         ],
         "description": "A Redux mapDispatchToProps function"
     },
@@ -66,5 +66,13 @@ exports.default = [
             "}"
         ],
         "description": "getDerivedStateFromProps static function"
+    },
+    {
+        "prefix": "componentDidUpdate",
+        "body": [
+            "componentDidUpdate(prevProps, prevState, snapshot) {",
+            "}"
+        ],
+        "description": "componentDidUpdate lifecycle function"
     }
 ];
